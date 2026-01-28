@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/197e9f07b4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Home</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <div class="giancarlo">
+            <h1>Giancarlo</h1>
+          </div>
+          <ul id="menuList">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Resume</a></li>
+          </ul>
+
+          <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+          </div>
+        </nav>
+      </header>
+
+      <!-- INTRODUCTION -->
+      <section class="introduction">
+        <div class="intro-content">
+          <div class="intro-main-content">
+            <h1 class="hey">Hello!</h1>
+            <h1 class="iam">I'm <span id="my-name">Giancarlo Acevedo</span></h1>
+            <p>A college student who loves developing websites.</p>
+
+            <div class="intro-btns">
+              <a href="#" class="btn">View projects</a>
+              <a href="#" class="btn contact-btn">Contact</a>
+            </div>
+          </div>
+
+          <div class="me-icon">
+            <img
+              src="images/me_picture.png"
+              alt="Giancarlo's icon"
+              class="me-icon-img"
+              width="200px"
+            />
+          </div>
+        </div>
+        <div class="skills">
+          <p>HTML<i class="fa-brands fa-html5"></i></p>
+          <p>CSS <i class="fa-brands fa-css3"></i></p>
+          <p>JavaScript <i class="fa-brands fa-square-js"></i></p>
+          <p>PHP <i class="fa-brands fa-php"></i></p>
+          <p>GitHub <i class="fa-brands fa-github"></i></p>
+          <p>SQL <i class="fa-solid fa-database"></i></p>
+        </div>
+      </section>
+
+      <main>
+        <!-- ABOUT AND PROJECTS -->
+        <section class="about-projects">
+          <div class="about">
+            <h2 class="h2-titles">About me</h2>
+            <div class="about-content">
+              <p>
+                I started learning web development in high school and have been
+                passionate about it ever since. Now, in my free time, I enjoy
+                creating responsive and user-friendly websites that provide
+                great user experiences to improve my skills. I specialize in the
+                core web stack (HTML, CSS, JavaScript, and SQL) and I'm
+                currently expanding my skills in PHP. I believe that great code
+                isn't just about functionality, but about creating seamless
+                digital experiences.
+              </p>
+            </div>
+          </div>
+
+          <div class="projects">
+            <h2 class="h2-titles">Projects</h2>
+
+            <div class="cards">
+              <div class="cards-content">
+                <p>Featured project</p>
+                <h3>Label Generator</h3>
+                <div class="glass">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Dolorem maiores ipsum id est sunt quaerat tempore veniam
+                    voluptatum minus.
+                  </p>
+                </div>
+              </div>
+              <div class="card-img">
+                <a href="https://api.soynikon.do" target="_blank"
+                  ><img
+                    src="images/Label_generator_website.png"
+                    alt="Screenshot of Label Generator Web App"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2026 Giancarlo Acevedo. All rights reserved.</p>
+      </footer>
+    </div>
+  </body>
+
+  <script type="module" src="js/scripts.js"></script>
+</html>
