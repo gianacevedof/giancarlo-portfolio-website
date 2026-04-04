@@ -3,22 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Awesome fonts -->
     <script
       src="https://kit.fontawesome.com/197e9f07b4.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
+
+    <!-- bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
+    <!-- email js -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "Br7Aes9kv5fMGyO9G",
+        });
+      })();
+    </script>
     <link rel="stylesheet" href="assets/styles.css" />
     <title>Home</title>
   </head>
@@ -42,11 +53,31 @@
           </button>
           <div class="collapse navbar-collapse fw-bold" id="navbarNav">
             <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-              <li class="nav-item"><a class="nav-link" href="https://github.com/gianacevedof" target="_blank">GitHub</a></li>
-              <li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1TLjiIvsq79tYpT_FeZOT_0qP8EL3dLWw/view?usp=share_link" target="_blank">Resume</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://github.com/gianacevedof"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="https://drive.google.com/file/d/1TLjiIvsq79tYpT_FeZOT_0qP8EL3dLWw/view?usp=share_link"
+                  target="_blank"
+                  >Resume</a
+                >
+              </li>
             </ul>
           </div>
         </div>
@@ -72,15 +103,33 @@
     <!-- SKILLS -->
     <section id="skills" class="container">
       <div class="row">
-        <p class="col-4 col-sm-3 col-md">HTML<i class="fa-brands fa-html5"></i></p>
-        <p class="col-4 col-sm-3 col-md">CSS <i class="fa-brands fa-css3"></i></p>
-        <p class="col-4 col-sm-3 col-md">JS <i class="fa-brands fa-square-js"></i></p>
-        <p class="col-4 col-sm-3 col-md">PHP <i class="fa-brands fa-php"></i></p>
-        <p class="col-4 col-sm-3 col-md">GitHub <i class="fa-brands fa-github"></i></p>
-        <p class="col-4 col-sm-3 col-md">SQL <i class="fa-solid fa-database"></i></p>
-        <p class="col-4 col-sm-3 col-md">Figma <i class="fa-brands fa-figma"></i></p>
-        <p class="col-4 col-sm-3 col-md">Python <i class="fa-brands fa-python"></i></p>
-        <p class="col-4 col-sm-3 col-md">cPanel <i class="fa-brands fa-cpanel"></i></p>
+        <p class="col-4 col-sm-3 col-md">
+          HTML<i class="fa-brands fa-html5"></i>
+        </p>
+        <p class="col-4 col-sm-3 col-md">
+          CSS <i class="fa-brands fa-css3"></i>
+        </p>
+        <p class="col-4 col-sm-3 col-md">
+          JS <i class="fa-brands fa-square-js"></i>
+        </p>
+        <p class="col-4 col-sm-3 col-md">
+          PHP <i class="fa-brands fa-php"></i>
+        </p>
+        <p class="col-4 col-sm-3 col-md">
+          GitHub <i class="fa-brands fa-github"></i>
+        </p>
+        <p class="col-4 col-sm-3 col-md">
+          SQL <i class="fa-solid fa-database"></i>
+        </p>
+        <p class="col-4 col-sm-3 col-md">
+          Figma <i class="fa-brands fa-figma"></i>
+        </p>
+        <p class="col-4 col-sm-3 col-md">
+          Python <i class="fa-brands fa-python"></i>
+        </p>
+        <p class="col-4 col-sm-3 col-md">
+          cPanel <i class="fa-brands fa-cpanel"></i>
+        </p>
       </div>
     </section>
 
@@ -91,26 +140,26 @@
         <div class="about-content">
           <p>
             I am a Computer Programming & Analysis student with a 3.9 GPA and a
-            focus on Full-Stack development. I have built responsive interfaces using
-            HTML, CSS, and Bootstrap, while handling the backend with SQL and
-            PHP. Currently, I’m strengthening my JavaScript skills and plan to
-            integrate React into my future projects to create more dynamic user
-            experiences. With a Cisco Cybersecurity certification, I always keep
-            security and clean code at the forefront of my work, as seen in my
-            Soynikon project.
+            focus on Full-Stack development. I have built responsive interfaces
+            using HTML, CSS, and Bootstrap, while handling the backend with SQL
+            and PHP. Currently, I’m strengthening my JavaScript skills and plan
+            to integrate React into my future projects to create more dynamic
+            user experiences. With a Cisco Cybersecurity certification, I always
+            keep security and clean code at the forefront of my work, as seen in
+            my Soynikon project.
           </p>
         </div>
       </div>
     </section>
 
     <!-- MORE INFORMATION -->
-     <section id="info" class="info container">
+    <section id="info" class="info container">
       <div class="info glass">
         <label>Experience level</label>
-        <p class="mb-4">Junior Web Developer</p>
+        <p class="mb-4">Junior Software Engineering</p>
 
         <label>Specialization</label>
-        <p class="mb-4">Full-Stack</p>
+        <p class="mb-4">Front-End</p>
 
         <label>Education</label>
         <p class="mb-4">Computer Programming, Valencia College</p>
@@ -118,20 +167,31 @@
         <label>Languages</label>
         <p>English, Spanish</p>
       </div>
-     </section>
+    </section>
 
     <!-- PROJECTS -->
     <section id="projects" class="container">
       <div class="projects">
         <h2 class="fw-bold">Projects</h2>
         <div class="card glass">
-          <img src="assets/images/soynikon.png" class="card-img-top" alt="Screenshot of the Soynikon's Label Generator Website Project">
+          <img
+            src="assets/images/soynikon.png"
+            class="card-img-top"
+            alt="Screenshot of the Soynikon's Label Generator Website Project"
+          />
           <div class="card-body p-0">
             <p class="fw-bold featured">Featured project</p>
-            <h5 class="card-title">Soynikon - Label Generator</h5>
+            <h5 class="card-title">Soynikon Desk</h5>
             <p class="text-danger">On progress...</p>
-            <p class="card-text">Dynamic label generator built with PHP and SQL. Features a data management system to optimize logistics and labeling workflows for small businesses.</p>
-            <a href="http://web.soynikon.do/" target="_blank" class="btn">Visit web.soynikon.do</a>
+            <p class="card-text">
+              A full-stack management system for Soynikon Photo Store shipping
+              logistics. Built with PHP, MySQL, and JavaScript — handles label
+              generation and keeps track of orders. Integrates a database for
+              clients and items sent.
+            </p>
+            <a href="http://web.soynikon.do/" target="_blank" class="btn"
+              >Visit Soynikon Desk</a
+            >
           </div>
         </div>
       </div>
@@ -142,8 +202,12 @@
       <h2 class="fw-bold">Contact</h2>
       <div class="contact glass">
         <span id="lets-connect" class="h3">Let's Connect!</span>
-        <p class="mt-3">I'm currently looking for new opportunities and collaborations. Whether you have a question or just want to say hi, I’ll try my best to get back to you!</p>
-        
+        <p class="mt-3">
+          I'm currently looking for new opportunities and collaborations.
+          Whether you have a question or just want to say hi, I’ll try my best
+          to get back to you!
+        </p>
+
         <div class="mini-card">
           <div class="icon">
             <i class="fa-solid fa-phone"></i>
@@ -160,9 +224,10 @@
           </div>
           <div>
             <h3>Email</h3>
-            <a href="mailto:gianacevedof@gmail.com"><p>gianacevedof@gmail.com</p></a>
+            <a href="mailto:gianacevedof@gmail.com"
+              ><p>gianacevedof@gmail.com</p></a
+            >
           </div>
-        </div>
         </div>
       </div>
     </section>
@@ -171,39 +236,68 @@
     <div id="c-form" class="container">
       <div class="c-form">
         <h3 class="pb-3">Get In Touch</h3>
-        <form class="row g-3">
+        <form id="contactForm" class="row g-3">
           <div class="col-md-6">
-            <input type="text" class="form-control" id="inputName" placeholder="Your Name">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+            />
           </div>
-          
+
           <div class="col-md-6">
-            <input type="email" class="form-control" id="inputEmail" placeholder="Your Email">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+            />
           </div>
 
           <div class="col-12">
-            <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
+            <input
+              type="text"
+              class="form-control"
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+            />
           </div>
 
           <div class="col-12">
-            <textarea type="text" class="form-control" id="inputAddress2" placeholder="Message" rows="6"></textarea>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              placeholder="Message"
+              rows="6"
+            ></textarea>
           </div>
-          
+
           <div class="col-12 c-btn">
-            <button type="submit" class="btn">Send Message</button>
+            <button type="button" class="btn" id="sendBtn">Send Message</button>
           </div>
-      </form>
+        </form>
       </div>
     </div>
 
     <!-- FOOTER -->
     <footer class="container border-top">
       <p>&copy; 2026 Giancarlo Acevedo</p>
-       <div>
-        <a href="https://www.linkedin.com/in/gianacevedof/" target="_blank">LinkedIn <i class="fa-brands fa-linkedin"></i></a>
-      </div> 
+      <div>
+        <a href="https://www.linkedin.com/in/gianacevedof/" target="_blank"
+          >LinkedIn <i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
     </footer>
 
+    <!-- my scrips.js -->
     <script type="module" src="assets/js/scripts.js"></script>
+
+    <!-- bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
